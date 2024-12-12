@@ -408,6 +408,7 @@ function rp()
     $date_cols = [];
     $datetime_cols = [];
     foreach ($pd_dtCols as $k => $v) {
+        dd($v);
         if ($v['data_type'] == "datetime") {
             $datetime_cols[] = $v['column_name'];
         } else if ($v['data_type'] == "date") {
